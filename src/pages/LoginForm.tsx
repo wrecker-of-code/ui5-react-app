@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
   Form,
   FormGroup,
@@ -21,14 +21,14 @@ const LoginForm = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleEmailInput = (e) => {
+  const handleEmailInput = (e: any) => {
     setEmail(e.target.value);
   };
-  const handlePasswordInput = (e) => {
+  const handlePasswordInput = (e: any) => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     // check if email and password are valid
     // if valid, redirect to home page
     // if not valid, show error message
@@ -38,9 +38,14 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="flex flex-row justify-center">
+    <div className="flex flex-row justify-center pt-20">
       <Card
-        header={<CardHeader titleText="HR Onboarding App" />}
+        header={
+          <CardHeader
+            titleText="HR Onboarding App"
+            avatar={<img src="kpmg-logo-blue.png" />}
+          />
+        }
         className="max-w-md w-full text-center"
         style={spacing.sapUiContentPadding}
       >

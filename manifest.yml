@@ -1,0 +1,6 @@
+applications:
+  - name: react-app
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    path: dist
