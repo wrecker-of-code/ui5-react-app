@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <ShellBar
-        logo={<img src="kpmg-logo-blue.png" className="h-6 me-2 -mt-1" />}
+        logo={<img src="#" className="h-6 me-2 -mt-1" />}
         primaryTitle="HR Onboarding App"
       />
       <div style={spacing.sapUiContentPadding}>
