@@ -43,7 +43,7 @@ const LoginForm = () => {
         header={
           <CardHeader
             titleText="HR Onboarding App"
-            avatar={<img src="kpmg-logo-blue.png" />}
+            avatar={<img src="#" />}
           />
         }
         className="max-w-md w-full text-center"
